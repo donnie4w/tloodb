@@ -1,7 +1,5 @@
-/**
- * Copyright 2017 tlnet Author. All Rights Reserved.
- * email: donnie4w@gmail.com
- */
+// Copyright (c) , donnie <donnie4w@gmail.com>
+// All rights reserved.
 package tloodb
 
 import (

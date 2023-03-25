@@ -1,3 +1,5 @@
+// Copyright (c) , donnie <donnie4w@gmail.com>
+// All rights reserved.
 package tloodb
 
 func AddObject(_tableKey string, a any) {
