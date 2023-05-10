@@ -99,7 +99,10 @@ func (this *DB) GetLike(prefix []byte) (datamap map[string][]byte, err error) {
 	if iter != nil {
 		datamap = make(map[string][]byte, 0)
 		for iter.Next() {
-			datamap[string(iter.Key())], err = this.Get(iter.Key())
+			bs := make([]byte, len(iter.Value()))
+			copy(bs, iter.Value())
+			// datamap[string(iter.Key())], err = this.Get(iter.Key())
+			datamap[string(iter.Key())] = bs
 		}
 		iter.Release()
 	}
